@@ -94,26 +94,39 @@
   <h2>2. Toplanan Bilgiler</h2>
   <ul>
     <li>Ad, soyad ve e-posta (Firebase Authentication için)</li>
-    <li>Profil bilgileri (yaş, cinsiyet, burç, doğum saati vb.)</li>
-    <li>Eşref Saati hesaplama verileri ve sayaç bilgileri</li>
+    <li>Profil bilgileri (yaş, cinsiyet, burç, doğum tarihi, doğum saati vb.)</li>
+    <li>Eşref Saati hesaplama verileri (kullanıcı doğum bilgileri, seçimler, uygulama içi ayarlar)</li>
+    <li>Cihaz bilgileriniz: IP adresi, cihaz modeli, işletim sistemi sürümü, çökme raporları (Log Data)</li>
     <li>Cihaz izinleri (bildirim, internet, titreşim)</li>
+    <li>
+      <strong>Konum Verileri:</strong>  
+      Eşref Saati hesaplamasında gerekli olduğu durumlarda aşağıdaki konum verileri işlenebilir:
+      <ul>
+        <li>Yaklaşık konum (şehir/seçilen bölge)</li>
+        <li>Hassas konum (GPS) — yalnızca kullanıcı izin verirse</li>
+      </ul>
+    </li>
+    <li>
+      <strong>Reklam Kimliği (Advertising ID):</strong>  
+      Google AdMob tarafından kişiselleştirilmiş reklamlar için kullanılabilir.
+    </li>
   </ul>
 
   <h2>3. Verilerin Kullanım Amaçları</h2>
   <ul>
-    <li>Hesap oluşturma ve yönetimi</li>
-    <li>Kullanıcıya özel Eşref Saati oluşturma</li>
-    <li>Bildirim gönderme</li>
-    <li>Kullanıcı deneyimini geliştirme</li>
-    <li>Güvenlik ve performans iyileştirmeleri</li>
+    <li>Hesap oluşturma ve kullanıcı oturumunu yönetme</li>
+    <li>Kullanıcıya özel Eşref Saati hesaplamaları ve gösterimleri</li>
+    <li>Bildirimlerin gönderilmesi</li>
+    <li>Reklam gösterimlerinin yönetimi</li>
+    <li>Performans ölçümü, hataların tespiti ve uygulamanın geliştirilmesi</li>
   </ul>
 
   <h2>4. Üçüncü Taraf Servisleri</h2>
-  <p>Uygulama yalnızca aşağıdaki servisleri kullanır:</p>
+  <p>Uygulama aşağıdaki hizmetleri kullanmaktadır:</p>
   <ul>
-    <li><strong>Firebase</strong> – Kimlik doğrulama, veritabanı ve analiz</li>
-    <li><strong>Google AdMob</strong> – Reklam gösterimleri</li>
-    <li><strong>Google Play Billing</strong> – Satın alma ve abonelik işlemleri</li>
+    <li><strong>Firebase</strong> – Kimlik doğrulama, veritabanı, analiz ve çökme raporlaması</li>
+    <li><strong>Google AdMob</strong> – Reklam gösterimleri ve reklam kimliği kullanımı</li>
+    <li><strong>Google Play Billing</strong> – Abonelik ve satın alma işlemleri</li>
   </ul>
 
   <p>Ayrıca bu servislerin kendi gizlilik politikaları geçerlidir:</p>
@@ -122,38 +135,62 @@
     <li><a href="https://policies.google.com/privacy" target="_blank">Google Gizlilik Politikası</a></li>
   </ul>
 
-  <h2>5. Veri Güvenliği</h2>
+  <h2>5. Verilerin Yurt Dışına Aktarımı</h2>
+  <p>
+    Firebase ve Google hizmetleri gereği kullanıcı verileri, uluslararası güvenli sunucularda
+    işlenebilir ve saklanabilir. Uygulamayı kullanarak bu aktarımı kabul etmiş olursunuz.
+  </p>
+
+  <h2>6. Veri Güvenliği</h2>
   <p>
     Tüm kullanıcı verileri gizli tutulur ve güvenli şekilde saklanır. Uygulama verilerinizi üçüncü kişilere satmaz,
-    paylaşmaz veya ticari amaçla kullanmaz.
+    ticari amaçla paylaşmaz ve yetkisiz erişimlere karşı modern güvenlik önlemleri uygular.
   </p>
 
-  <h2>6. Kullanıcı Hakları</h2>
+  <h2>7. KVKK Kapsamındaki Haklar</h2>
+  <p>Kullanıcılar, KVKK Madde 11 kapsamında aşağıdaki haklara sahiptir:</p>
   <ul>
-    <li>Profil bilgilerini güncelleme</li>
-    <li>Hesabı ve verileri silme</li>
-    <li>Bildirim izinlerini yönetme</li>
+    <li>Kişisel verilerinin işlenip işlenmediğini öğrenme</li>
+    <li>İşlenmişse buna ilişkin bilgi talep etme</li>
+    <li>Verilerin işlenme amacını ve amaca uygun kullanılıp kullanılmadığını öğrenme</li>
+    <li>Yurt içinde veya yurt dışında aktarıldığı üçüncü kişileri bilme</li>
+    <li>Eksik veya hatalı işlenen verilerin düzeltilmesini isteme</li>
+    <li>Kişisel verilerin silinmesini veya yok edilmesini talep etme</li>
+    <li>Bu işlemlerin aktarım yapılan üçüncü kişilere bildirilmesini isteme</li>
+    <li>Oluşabilecek zararlara karşı tazminat talep etme</li>
   </ul>
 
-  <h2>7. Veri Saklama Süresi</h2>
+  <h2>8. Kullanıcı Hakları</h2>
+  <ul>
+    <li>Profil bilgilerini güncelleme</li>
+    <li>Hesabı ve tüm verileri silme</li>
+    <li>Bildirim ve izin tercihlerini yönetme</li>
+    <li>Reklam kişiselleştirme ayarlarını cihaz üzerinden kapatma</li>
+  </ul>
+
+  <h2>9. Veri Saklama Süresi</h2>
   <p>
-    Veriler hesap aktif olduğu sürece saklanır. Hesap silindiğinde tüm bilgiler 30 gün içinde tamamen silinir.
+    Veriler hesap aktif olduğu sürece saklanır. Kullanıcı hesabını sildiğinde tüm veriler 30 gün içerisinde tamamen kaldırılır.
   </p>
 
-  <h2>8. Çocukların Gizliliği</h2>
+  <h2>10. Çocukların Gizliliği</h2>
+  <p>Uygulama 13 yaş altı çocuklar için tasarlanmamıştır. Böyle bir kullanım tespit edilirse hesap derhal silinir.</p>
+
+  <h2>11. Hesap Silme</h2>
   <p>
-    Uygulama 13 yaş altı kullanıcılar için tasarlanmamıştır. Böyle bir kullanım tespit edilirse hesap derhal silinir.
+    Kullanıcılar hesaplarını uygulama içindeki  
+    <strong>"Ayarlar &gt; Hesabımı Sil"</strong> bölümünden veya e-posta yoluyla silebilir.
   </p>
 
-  <h2>9. Politika Güncellemeleri</h2>
+  <h2>12. Politika Güncellemeleri</h2>
   <p>
-    Gizlilik politikası gerektiğinde güncellenebilir. Değişiklikler uygulama içinden ve Play Store üzerinden
-    duyurulur.
+    Gizlilik politikası zaman zaman güncellenebilir. Değişiklikler uygulama içinde ve Play Store üzerinden duyurulur.
   </p>
 
-  <h2>10. İletişim</h2>
-  <p>Her türlü soru ve veri silme talepleri için:</p>
+  <h2>13. İletişim</h2>
+  <p>Her türlü soru, öneri ve veri silme talepleri için:</p>
   <p><strong>E-posta:</strong> <a href="mailto:esrefsaatiapp@gmail.com">esrefsaatiapp@gmail.com</a></p>
+  <p><strong>Adres:</strong> Gaziantep / Türkiye</p>
 
   <div class="dev-box">
     <p><strong>Geliştirici:</strong> Ömer Eyibardakçı</p>
